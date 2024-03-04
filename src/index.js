@@ -10,4 +10,4 @@ app.use('/products', productRoutes);
 const userRoutes = require('./routes/user.routes')
 app.use('/users', userRoutes);
 
-app.listen(5000)
+app.listen(3000)

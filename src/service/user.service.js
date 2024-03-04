@@ -21,7 +21,7 @@ const login = async (email, password) => {
         throw new Error('Incorrect password');
     }
     const payload = {
-        id: user.id,
+        id: user.user_id,
         role: user.role
     }
     const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '3d' });
